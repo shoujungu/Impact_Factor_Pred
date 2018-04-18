@@ -9,8 +9,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MinMaxScaler
 import sklearn
 from ast import literal_eval
-import en_core_web_sm
 import spacy
+import en_core_web_sm
+
 
 app = flask.Flask(__name__)
 
