@@ -10,6 +10,7 @@ from sklearn.preprocessing import MinMaxScaler
 import sklearn
 from ast import literal_eval
 import en_core_web_sm
+import spacy
 
 app = flask.Flask(__name__)
 
