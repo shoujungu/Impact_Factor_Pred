@@ -10,13 +10,13 @@ from sklearn.preprocessing import MinMaxScaler
 import sklearn
 from ast import literal_eval
 import spacy
-import en_core_web_sm
+import en-core-web-md
 
 
 app = flask.Flask(__name__)
 
-#nlp= en_core_web_sm.load()
-nlp = spacy.load('en')
+nlp= en-core-web-md.load()
+#nlp = spacy.load('en')
 blacklist=['the','study','ref','here','role','to',
           '-PRON-','this','that','background','introduction','method','conclusion',
            'find']
