@@ -46,8 +46,7 @@ with open('logreg_tfidf_temp.pkl', 'rb') as f:
 #df3=pd.read_csv('x_train_3.csv',header=None)
 #x_train=pd.concat([df1,df2,df3]).iloc[:,0]
 
-#tfidf = TfidfVectorizer(analyzer='word', lowercase=False, ngram_range=(1,4), \
-                   min_df=10,max_df=0.3, max_features=50000)
+#tfidf = TfidfVectorizer(analyzer='word', lowercase=False, ngram_range=(1,4),min_df=10,max_df=0.3, max_features=50000)
 #tfidf_f=tfidf.fit(x_train)
 
 @app.route('/')
