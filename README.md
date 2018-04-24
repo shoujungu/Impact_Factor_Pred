@@ -13,9 +13,9 @@ Journal of Biological Chemistry (jbc) (from: 2016-01-01),<br>Scientific Reports 
 
 
 #### B. Data Munging
-* Downloaded medline formatted data from each journal were converted to pandas dataframe type with columns: **'PMID', 'Title', 'Abstract'** and **'Journal'**. Detailed code could be found in ***format_convert.py***.<br>
+* Downloaded medline formatted data from each journal were converted to pandas dataframe type with columns: **'PMID', 'Title', 'Abstract'** and **'Journal'**. Detailed code could be found in ***full_model/format_convert.py***.<br>
 
-* All converted data in the same group were combined into one single dataframe. Records with incorrect data in **'Abstract'** column were removed. Detailed code could be found in ***data_combine.py***<br>
+* All converted data in the same group were combined into one single dataframe. Records with incorrect data in **'Abstract'** column were removed. Detailed code could be found in ***full_model/data_combine.py***<br>
 
 * Summary of the cleaned data were shown below:<br>
     * Total data in all groups:<br>
@@ -36,9 +36,9 @@ Journal of Biological Chemistry (jbc) (from: 2016-01-01),<br>Scientific Reports 
  3. Customized stop words were removed. <br>  
 
 * Data combination:<br>
-    Cleaned abstracts in all groups were combined into single csv file (**x_train.csv** & **x_test.csv**). And their corresponding labels were also combined into single csv file with same order (**y_train.csv** & **y_test.csv**).   <br>
+    Cleaned abstracts in all groups were combined into single csv file (**full_model/x_train.csv** & **full_model/x_test.csv**). And their corresponding labels were also combined into single csv file with same order (**full_model/y_train.csv** & **full_model/y_test.csv**).   <br>
 
-* Detailed code could be found in ***data_clean.py***
+* Detailed code could be found in ***full_model/data_clean.py***
 
 #### D. Model Training
 * Word to vector:<br>
@@ -48,7 +48,7 @@ Abstracts were converted to sparse matrix by using TF-IDF method.
 MaxAbsScaler was used to scale the features.
 
 * Model Training:<br>
-Due to the limited computation power, logistic regression model was used for this project. Various parameters were tested and recorded in ***logistic_regression_params.csv***. The confusion matrix of the best model could be found in ***logreg_cm.csv***. Detailed code could be found in ***logreg_params_search.py*** and ***model_training.py***.
+Due to the limited computation power, logistic regression model was used for this project. Various parameters were tested and recorded in ***full_model/logistic_regression_params.csv***. The confusion matrix of the best model could be found in ***full_model/logreg_cm.csv***. Detailed code could be found in ***full_model/logreg_params_search.py*** and ***full_model/model_training.py***.
 
 * A sample model was demonstrated here:<br>
 [https://if-pred.herokuapp.com](https://if-pred.herokuapp.com)
