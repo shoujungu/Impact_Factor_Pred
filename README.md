@@ -29,15 +29,15 @@ Journal of Biological Chemistry (jbc) (from: 2016-01-01),<br>Scientific Reports 
 * Data split:
  1. Data in each group were randomly shuffled by rows;
  2. 20% of data were used as test data, and 80% of data were used as training data.<br>
- <br>
+
 * Nature language processing:
  1. Each word in abstract was lemmatized and lower cased;
  2. None English words and stop words were removed;
- 3. Customized stop words were removed.<br>
- <br>
+ 3. Customized stop words were removed. <br>  
+
 * Data combination:<br>
     Cleaned abstracts in all groups were combined into single csv file (**x_train.csv** & **x_test.csv**). And their corresponding labels were also combined into single csv file with same order (**y_train.csv** & **y_test.csv**).   <br>
-    <br>
+
 * Detailed code could be found in ***data_clean.py***
 
 #### D. Model Training
