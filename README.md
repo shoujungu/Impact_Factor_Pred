@@ -3,13 +3,13 @@
 #### A. Data Collection  
 Raw data were fetched from [Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/) in Medline format with different start date, and were divided into three groups:  
   * **Group 0** includes publications from **6** journals:  
-  Nature (from: 2016-01-01),<br>Science (from: 2016-01-01),<br>Cell (from: 2016-01-01),<br>New England Journal of Medicine (nejm) (from: 2016-01-01),<br>Nature Biotechnology (nat_biotechnol) (from: 2016-01-01),<br>Lancet (from: 2016-01-01).<br>
+  Nature (from 2016-01-01 to 2018-04-21),<br>Science (from 2016-01-01 to 2018-04-21),<br>Cell (from 2016-01-01 to 2018-04-21),<br>New England Journal of Medicine (nejm) (from 2016-01-01 to 2018-04-21),<br>Nature Biotechnology (nat_biotechnol) (from 2016-01-01 to 2018-04-21),<br>Lancet (from 2016-01-01 to 2018-04-21).<br>
 
 * **Group 1** includes publications from **4** journals: <br>
-The Journal of Clinical Investigation (jci) (from: 2016-01-01),<br>Genes & Development (gens_dev) (from: 2016-01-01),<br>Proceedings of the National Academy of Sciences of the United States of America (pnas) (from: 2016-01-01),<br>Nature Communications (nat_comm) (from: 2016-01-01).<br>
+The Journal of Clinical Investigation (jci) (from 2016-01-01 to 2018-04-21),<br>Genes & Development (gens_dev) (from 2016-01-01 to 2018-04-21),<br>Proceedings of the National Academy of Sciences of the United States of America (pnas) (from 2016-01-01 to 2018-04-21),<br>Nature Communications (nat_comm) (from 2016-01-01 to 2018-04-21).<br>
 
 * **Group 2** includes publications from **3** journals: <br>
-Journal of Biological Chemistry (jbc) (from: 2016-01-01),<br>Scientific Reports (sci_rep) (from: 2017-06-01),<br>Plos One (from: 2017-06-01).<br>
+Journal of Biological Chemistry (jbc) (from 2016-01-01 to 2018-04-21),<br>Scientific Reports (sci_rep) (from 2016-01-01 to 2018-04-21),<br>Plos One (from 2016-01-01 to 2018-04-21).<br>
 
 
 #### B. Data Munging
@@ -36,7 +36,7 @@ Journal of Biological Chemistry (jbc) (from: 2016-01-01),<br>Scientific Reports 
  3. Customized stop words were removed. <br>  
 
 * Data combination:<br>
-    Cleaned abstracts in all groups were combined into single csv file (**full_model/x_train.csv** & **full_model/x_test.csv**). And their corresponding labels were also combined into single csv file with same order (**full_model/y_train.csv** & **full_model/y_test.csv**).   <br>
+    Cleaned abstracts in all groups were combined into single csv file. And their corresponding labels were also combined into single csv file with same order.   <br>
 
 * Detailed code could be found in ***full_model/data_clean.py***
 
