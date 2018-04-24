@@ -26,11 +26,11 @@ Journal of Biological Chemistry (jbc) (from: 2016-01-01),<br>Scientific Reports 
     ![](2_counts.jpg)<br>
 
 #### C. Feature Engineering
-* Data split:
+* Data split:<br>
  1. Data in each group were randomly shuffled by rows;
  2. 20% of data were used as test data, and 80% of data were used as training data.<br>
 
-* Nature language processing:
+* Nature language processing:<br>
  1. Each word in abstract was lemmatized and lower cased;
  2. None English words and stop words were removed;
  3. Customized stop words were removed. <br>  
